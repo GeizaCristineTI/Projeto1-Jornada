@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Diário Pessoal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <button
+        id="toggle-dark"
+        style="
+          position: absolute;
+          top: 16px;
+          right: 16px;
+          padding: 8px 16px;
+          border-radius: 8px;
+          border: none;
+          background: #a75ff0;
+          color: #fff;
+          font-weight: bold;
+          cursor: pointer;
+          z-index: 10;
+        "
+      >
+        🌙 Modo Escuro
+      </button>
+      <h1>
+        Meu Diário Pessoal de 2025
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#e3e3e3"
+        >
+          <path
+            d="M480-120 80-600l120-240h560l120 240-400 480Zm-95-520h190l-60-120h-70l-60 120Zm55 347v-267H218l222 267Zm80 0 222-267H520v267Zm144-347h106l-60-120H604l60 120Zm-474 0h106l60-120H250l-60 120Z"
+          />
+        </svg>
+      </h1>
+      <h2>
+        No ano de 2025, iniciei minha carreira em TI, e irei contar como está
+        sendo o processo.
+      </h2>
+    </header>
+    <script>
+      const btn = document.getElementById("toggle-dark");
+      function setDarkMode(on) {
+        document.body.classList.toggle("dark-mode", on);
+        btn.textContent = on ? "☀️ Modo Claro" : "🌙 Modo Escuro";
+      }
+      btn.onclick = () => {
+        const isDark = document.body.classList.toggle("dark-mode");
+        btn.textContent = isDark ? "☀️ Modo Claro" : "🌙 Modo Escuro";
+        localStorage.setItem("dark-mode", isDark ? "1" : "0");
+      };
+      // Mantém preferência ao recarregar
+      if (localStorage.getItem("dark-mode") === "1") setDarkMode(true);
+    </script>
+    <main>
+      <section class="mes">
+        <h2>Fevereiro de 2025</h2>
+        <p>
+          Este mês marcou um recomeço importante na minha vida: iniciei a
+          graduação em Gestão da Tecnologia da Informação. Foi uma escolha que
+          me surpreendeu, porque logo nas primeiras aulas percebi que me
+          apaixonei pela área de TI. Cada novo conteúdo despertava minha
+          curiosidade, e eu comecei a me ver construindo uma carreira nesse
+          universo tão amplo e inovador.
+        </p>
+      </section>
+      <section class="mes">
+        <h2>Junho de 2025</h2>
+        <p>
+          Junho trouxe uma conquista que me encheu de orgulho: fui aprovada para
+          participar de um curso de Desenvolvimento de Software, oferecido pela
+          empresa O Boticário em parceria com a Koru. Está sendo uma experiência
+          extremamente enriquecedora. Além das aulas serem muito bem
+          estruturadas, estou aprendendo com colegas que já atuam na área e têm
+          muita experiência. Trocar ideias com eles me ajuda a expandir minha
+          visão e acelerar meu aprendizado. Me sinto crescendo a cada semana.
+        </p>
+      </section>
+      <section class="mes">
+        <h2>Julho de 2025</h2>
+        <p>
+          Agora, em julho, estou prestes a dar mais um passo importante: no dia
+          20, começo minha nova graduação em Sistemas de Computação pela UFF.
+          Estou muito animada e cheia de expectativas! Sinto que essa nova etapa
+          vai complementar tudo o que venho aprendendo e me deixar ainda mais
+          preparada para o mercado de trabalho na área de tecnologia.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Geiza Cristine</p>
+    </footer>
+  </body>
+</html>
