@@ -1,37 +1,80 @@
-# 📚 Diário de Aprendizado - Programa Desenvolve
+📘 Diário de Aprendizado – Programa Desenvolve
+📌 Sobre
+Este repositório registra minha jornada de estudos no Programa Desenvolve, com foco em desenvolvimento web, versionamento de código, lógica de programação e ferramentas essenciais para desenvolvedores(as). A organização está separada por módulos, com os conteúdos e práticas que venho aprendendo ao longo da trilha.
 
-## 📖 Sobre
+📚 Módulo 1 – Fundamentos de Web (HTML/CSS + Git)
+🔹 Tópicos estudados:
+Estruturação básica de páginas HTML
 
-Este repositório documenta minha jornada no **Programa Desenvolve**, registrando evoluções semanais em desenvolvimento web e versionamento de código.
+Tags essenciais: div, h1 a h6, p, a
 
-## 🗓️ Progresso Semanal
+Estilização com CSS:
 
-### ⭐ Semana 1 (16/06 - 18/06)
+Propriedades de texto e cor
 
-**Fundamentos de HTML & CSS**
+Modelo de caixa (margin, padding)
 
-- Estruturação básica de páginas web
-- Tags essenciais: `div`, `h1-h6`, `p`, `a`
-- Estilização inicial com CSS:
-  - Propriedades de texto e cores
-  - Modelo de caixa (margin, padding)
+Layouts com Flexbox e Grid
 
-### 🚀 Semana 2 (19/06 - 25/06)
+Responsividade básica
 
-**HTML/CSS Avançado + Deploy**
+Deploy de páginas estáticas via terminal (VS Code)
 
-- Layouts com Flexbox e Grid
-- Responsividade básica
-- Primeiro deploy via terminal VS Code
-- Publicação do diário pessoal online
+Publicação de portfólio online
 
-### 🔄 Semana 3 (26/06 - 02/07)
+Integração com Git e GitHub:
 
-**Integração GitHub + VS Code**
+Criação e conexão de repositórios locais e remotos
 
-- Conexão de repositórios locais/remotos
-- Fluxo de trabalho com Git:
-  ```bash
+Fluxo básico de versionamento com Git:
+
+bash
+Copiar
+Editar
+git add .
+git commit -m "mensagem do commit"
+git push
+⚠️ Obs: git init deve ser executado apenas uma vez no repositório. Executar novamente pode causar conflitos e bagunçar o histórico.
+
+📚 Módulo 2 – Lógica de Programação com JavaScript
+🔹 Tópicos estudados:
+Tipos de nomenclaturas ("cases") utilizadas em programação:
+
+camelCase, PascalCase, snake_case, kebab-case, SCREAMING_SNAKE_CASE, flatcase
+
+Clonagem de repositórios com git clone
+
+Navegação no terminal:
+
+Comandos: cd, ls, code .
+
+Resolução de erro: pasta já existente no momento do clone
+
+Estrutura de pastas e organização de arquivos no VS Code
+
+Lógica de programação com JavaScript:
+
+Condicionais: if, else
+
+Operadores:
+
+Aritméticos: +, -, *, /
+
+Atribuição: =, +=, -=, etc.
+
+Comparação: ==, ===, !=, <, >
+
+Lógicos: &&, ||, !
+
+Laços de repetição:
+
+for
+
+while (caso tenha visto)
+
+Organização dos scripts por tema: variaveis, condicional, loop, operadores
+
+
   git add .
   git commit -m "Título escolhido..."
   git push
