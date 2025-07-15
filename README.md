@@ -40,17 +40,11 @@ git push
 🔹 Tópicos estudados:
 Tipos de nomenclaturas ("cases") utilizadas em programação:
 
-camelCase, PascalCase, snake_case, kebab-case, SCREAMING_SNAKE_CASE, flatcase
-
 Clonagem de repositórios com git clone
 
 Navegação no terminal:
 
 Comandos: cd, ls, code .
-
-Resolução de erro: pasta já existente no momento do clone
-
-Estrutura de pastas e organização de arquivos no VS Code
 
 Lógica de programação com JavaScript:
 
@@ -60,17 +54,9 @@ Operadores:
 
 Aritméticos: +, -, *, /
 
-Atribuição: =, +=, -=, etc.
-
-Comparação: ==, ===, !=, <, >
-
-Lógicos: &&, ||, !
+Lógicos: &&
 
 Laços de repetição:
-
-for
-
-while (caso tenha visto)
 
 Organização dos scripts por tema: variaveis, condicional, loop, operadores
 
@@ -78,6 +64,5 @@ Organização dos scripts por tema: variaveis, condicional, loop, operadores
   git add .
   git commit -m "Título escolhido..."
   git push
-  Obsss>> O comando "Git init" só pode ser dado uma vez no mesmo repositório. Se der "Git init" uma segunda vez, pode gerar configurações duplicadas (como hooks ou branches padrão).
-  Bagunçar o histórico existente se houver conflitos.
+  Obsss>> O comando "Git init" só pode ser dado uma vez no mesmo repositório. Se der "Git init" uma segunda vez, pode gerar configurações duplicadas.
   ```
